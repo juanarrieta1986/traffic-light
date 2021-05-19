@@ -1,0 +1,52 @@
+//write color in hex
+//traffic-light color
+$whole: #333;
+$colorRojoOn: #FF0000;//red
+$colorRojoOff: rgb(104, 38, 38);//red
+$colorAmarilloOn: #FFFF00;//yellow
+$colorAmarilloOff: rgb(121, 121, 50);//yellow
+$colorVerdeOn: #00FF00;//green
+$colorVerdeOff: rgb(56, 121, 56);//green
+
+
+body {
+  background-image: url(https://f.cl.ly/items/2K0P3z2y3X3c052f2B3Y/Image%202013.04.30%2021%3A28%3A02.png);
+}
+
+#traffic-light {
+  //main traffic light
+  position: absolute;
+  display:block;
+  left: 50%;
+  top: 50%; 
+  margin-left: -60px;
+  margin-top: -160px;
+  background-color:$whole;
+  width:120px;
+  height:320px;
+  border-radius:30px;
+}
+
+input {
+  
+  //remove default style
+  appearance: none;
+  //make the traffic lights appear
+  position: relative;
+  left: 50%;
+  width:80px;
+  height:80px;
+  margin-top: 20px;
+  margin-left:-40px;
+  background-color: grey;
+  //vertical-align: middle;
+  border-radius: 100%;
+  display: block;
+ 
+}
+
+//extra stuff
+* {
+  user-select: none;
+  outline:none;
+}
